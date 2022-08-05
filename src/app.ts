@@ -1,9 +1,14 @@
 import { Component } from 'react'
 import './app.scss'
 
-class App extends Component {
+class App extends Component{
+  state: Readonly<{}> ={
+    myName: 'sdsd'
+  }
 
-  componentDidMount () {}
+  componentDidMount () {
+    console.log(this.state.myName);
+  }
 
   componentDidShow () {}
 

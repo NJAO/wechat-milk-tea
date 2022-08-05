@@ -14,6 +14,13 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/utils/*": ["./src/utils/*"],
+      "@/service/*": ["./src/service/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/config/*": ["./src/config/*"]
+    } ,
     "rootDir": ".",
     "jsx": "react-jsx",
     "allowJs": true,
