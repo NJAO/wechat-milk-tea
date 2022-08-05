@@ -1,9 +1,14 @@
 import { Component } from 'react'
 import './app.scss'
 
+interface state {
+  readonly myName:string
+  [key:string]:any
+}
+
 class App extends Component{
-  state: Readonly<{}> ={
-    myName: 'sdsd'
+  state: Readonly<state> = {
+    myName:'sdsasd'
   }
 
   componentDidMount () {
