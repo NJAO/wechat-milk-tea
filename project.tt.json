@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "wechat-milk-tea",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
