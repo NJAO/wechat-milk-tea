@@ -1,4 +1,4 @@
 export default definePageConfig({
-    navigationBarTitleText: '点单'
+    navigationBarTitleText: '我的'
   })
   
