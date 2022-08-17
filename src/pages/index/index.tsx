@@ -18,6 +18,9 @@ type PageState = {
 
 type IProps =  PageStateProps & PageDispatchProps & PageOwnProps;
 export default class Index extends Component {
+  state = {
+    name:'sdsd',
+  }
   componentWillMount () { }
  
   componentDidMount () { }
@@ -31,7 +34,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Helsld!</Text>
+        <Text>{this.state.name}</Text>
         <Button>点击</Button>
       </View>
     )

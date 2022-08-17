@@ -4,6 +4,7 @@ export default defineAppConfig({
     'pages/user-center/index'
   ],
   window: {
+    navigationStyle: 'custom',
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
@@ -17,8 +18,8 @@ export default defineAppConfig({
     list: [
       {
         pagePath:'pages/index/index',
-        iconPath:'./static/tabBar/index.png',
-        selectedIconPath:'./static/tabBar/index-alive.png',
+        iconPath:'./static/tabBar/order.png',
+        selectedIconPath:'./static/tabBar/order-alive.png',
         text:'首页'
       },
       {
