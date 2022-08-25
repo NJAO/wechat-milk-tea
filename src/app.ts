@@ -8,12 +8,14 @@ interface state {
 
 class App extends Component{
   state: Readonly<state> = {
-    myName:'sdsasd'
+    myName:'joan'
   }
 
   componentDidMount () {
     console.log(this.state.myName);
   }
+
+  props: Readonly<{children:any}>
 
   componentDidShow () {}
 

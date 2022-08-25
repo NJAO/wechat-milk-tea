@@ -1,25 +1,10 @@
 import { Component } from 'react'
-import { View, Text, Button } from '@tarojs/components'
+import { View, Text, Swiper, SwiperItem } from '@tarojs/components'
 import './index.scss'
 
-type PageStateProps = {
-  myName:string
-}
-
-type PageDispatchProps = {
-  getRecommendMyName: () => string
-}
-
-type PageOwnProps = {}
-
-type PageState = {
-  myName:string
-}
-
-type IProps =  PageStateProps & PageDispatchProps & PageOwnProps;
 export default class Index extends Component {
   state = {
-    name:'sdsd',
+    name:'index'
   }
   componentWillMount () { }
  
@@ -34,8 +19,26 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
+        <Swiper
+          className='test-h'
+          indicatorColor='#999'
+          indicatorActiveColor='#333'
+          data-vertical
+          circular
+          indicatorDots
+          autoplay
+        >
+        <SwiperItem>
+          <View className='demo-text-1'>1</View>
+        </SwiperItem>
+        <SwiperItem>
+          <View className='demo-text-2'>2</View>
+        </SwiperItem>
+        <SwiperItem>
+          <View className='demo-text-3'>3</View>
+        </SwiperItem>
+      </Swiper>
         <Text>{this.state.name}</Text>
-        <Button>点击</Button>
       </View>
     )
   }

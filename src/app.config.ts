@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
+    'pages/order/index',
     'pages/user-center/index'
   ],
   window: {
@@ -18,9 +19,15 @@ export default defineAppConfig({
     list: [
       {
         pagePath:'pages/index/index',
+        iconPath:'./static/tabBar/index.png',
+        selectedIconPath:'./static/tabBar/index-alive.png',
+        text:'首页'
+      },
+      {
+        pagePath:'pages/order/index',
         iconPath:'./static/tabBar/order.png',
         selectedIconPath:'./static/tabBar/order-alive.png',
-        text:'首页'
+        text:'点单'
       },
       {
         pagePath:'pages/user-center/index',
