@@ -20,7 +20,7 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <Swiper
-          className='test-h'
+          className='swiper-container'
           indicatorColor='#999'
           indicatorActiveColor='#333'
           data-vertical
@@ -28,15 +28,7 @@ export default class Index extends Component {
           indicatorDots
           autoplay
         >
-        <SwiperItem>
-          <View className='demo-text-1'>1</View>
-        </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-2'>2</View>
-        </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-3'>3</View>
-        </SwiperItem>
+        {[1,2,3].map(item => <SwiperItem key={item} className='swiper-item'></SwiperItem>)}
       </Swiper>
         <Text>{this.state.name}</Text>
       </View>

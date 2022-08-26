@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "wechat-milk-tea",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wx91304766c461ce90",
   "setting": {
     "urlCheck": true,
     "es6": false,
