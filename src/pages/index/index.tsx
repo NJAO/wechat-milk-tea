@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { View, Text, Swiper, SwiperItem } from '@tarojs/components'
+import { View, Swiper, SwiperItem } from '@tarojs/components'
 import './index.scss'
 
 export default class Index extends Component {
@@ -21,16 +21,16 @@ export default class Index extends Component {
       <View className='index'>
         <Swiper
           className='swiper-container'
-          indicatorColor='#999'
-          indicatorActiveColor='#333'
-          data-vertical
           circular
           indicatorDots
           autoplay
         >
         {[1,2,3].map(item => <SwiperItem key={item} className='swiper-item'></SwiperItem>)}
-      </Swiper>
-        <Text>{this.state.name}</Text>
+        </Swiper>
+        <View>
+          
+        </View>
+        <View>{this.state.name}</View>
       </View>
     )
   }

@@ -2,6 +2,7 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/order/index',
+    'pages/take-order/index',
     'pages/user-center/index'
   ],
   window: {
@@ -28,6 +29,12 @@ export default defineAppConfig({
         iconPath:'./static/tabBar/order.png',
         selectedIconPath:'./static/tabBar/order-alive.png',
         text:'点单'
+      },
+      {
+        pagePath:'pages/take-order/index',
+        iconPath:'./static/tabBar/take-order.png',
+        selectedIconPath:'./static/tabBar/take-order-alive.png',
+        text:'订单'
       },
       {
         pagePath:'pages/user-center/index',
