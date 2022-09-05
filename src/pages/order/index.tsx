@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { View, Button } from '@tarojs/components'
+import { View, Map } from '@tarojs/components'
 import './index.scss'
 
 type PageStateProps = {
@@ -18,9 +18,7 @@ type PageState = {
 
 type IProps =  PageStateProps & PageDispatchProps & PageOwnProps;
 export default class Index extends Component {
-  state = {
-    name:'点单',
-  }
+
   componentWillMount () { }
  
   componentDidMount () { }
@@ -34,7 +32,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Button>{this.state.name}</Button>
+         <Map longitude={113.14} latitude={23.08} />
       </View>
     )
   }
