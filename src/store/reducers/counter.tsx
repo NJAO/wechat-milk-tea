@@ -2,7 +2,7 @@ import { AnyAction } from 'redux'
 import { ADD, MINUS } from '../constants/counter'
 
 export interface counterState{
-  num:number
+  num:number,
 }
 
 const INITIAL_STATE:counterState = {
